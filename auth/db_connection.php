@@ -11,7 +11,8 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $pdo;
 
-} catch (PDOException $e) {
+
+} catch (PDOException $e)  {
 
     echo 'error: ' . $e->getMessage();
     return false;
